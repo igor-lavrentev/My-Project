@@ -1,15 +1,10 @@
 import java.util.Arrays;
-import java.util.Scanner;
 
-
-public class Task1 {
+public class Main {
     public static void main(String[] args) {
 
-        System.out.println("n :");
-        int n = new Scanner(System.in).nextInt();
-
-        System.out.println("m :");
-        int m = new Scanner(System.in).nextInt();
+        Integer n = Integer.valueOf((args[0]));
+        Integer m = Integer.valueOf((args[1]));
 
         array(n, m);
     }

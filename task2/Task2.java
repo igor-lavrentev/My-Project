@@ -10,8 +10,8 @@ public class Task2 {
 
         Scanner scan = new Scanner(System.in);
 
-        String pathCircle = scan.nextLine();
-        String pathDots = scan.nextLine();
+        String pathCircle = args[0];
+        String pathDots = args[1];
 
         List<Double> circle = new ArrayList<>();
 

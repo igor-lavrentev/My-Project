@@ -11,16 +11,11 @@ import java.util.HashMap;
 public class Task3 {
     public static void main(String[] args) throws IOException, ParseException {
 
-//      BufferedReader readerValues = new BufferedReader(new FileReader("src/json/values.json"));
-//      BufferedReader readerTests = new BufferedReader(new FileReader("src/json/tests.json"));  Вариант в файлами в рабочей дериктории
-//      BufferedReader readerReport = new BufferedReader(new FileReader("src/json/report.json"));
+        String values = args[0];
 
-        BufferedReader readerValues = new BufferedReader(new InputStreamReader(System.in));
+        String tests = args[1];
 
-
-        String values = readerValues.readLine();
-        String tests = readerTests.readLine();
-        String report = readerReport.readLine();
+        String report = args[2];
 
         JSONParser parser = new JSONParser();
         JSONObject valuesJson = new JSONObject();

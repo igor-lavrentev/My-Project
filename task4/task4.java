@@ -10,9 +10,8 @@ import java.util.Scanner;
 public class Task4 {
     public static void main(String[] args) {
 
-        System.out.println("Путь к файлу: ");
 
-        String file = new Scanner(System.in).next();
+        File file = new File(args[0]);
 
         List<Integer> numbers = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
